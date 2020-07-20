@@ -1,0 +1,17 @@
+{
+  "name": "json-csv-str-convert",
+  "version": "1.0.0",
+  "description": "convert csv to json and vice versa",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "ryanchanplc",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
