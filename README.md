@@ -2,9 +2,19 @@
 
 A Nodejs module that help to convert JSON object to CSV string and vice versa.
 
-## To-DO
+## Installation
 
-This module is not published to npm registry yet.
+Install with npm
+
+```
+npm install json-csv-str-convert
+```
+
+and in your code
+
+```javascript
+var converter = require('json-csv-str-convert')
+```
 
 ## Usage
 
