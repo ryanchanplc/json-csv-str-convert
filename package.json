@@ -17,6 +17,14 @@
     "type": "git",
     "url": "git+https://github.com/ryanchanplc/json-csv-str-convert.git"
   },
+  "keywords": [
+    "csv",
+    "to",
+    "json",
+    "csv2json",
+    "json2csv",
+    "converter"
+  ],
   "author": "ryanchanplc",
   "license": "ISC",
   "devDependencies": {
