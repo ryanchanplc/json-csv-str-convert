@@ -1,11 +1,11 @@
 class Converter {
   constructor() {
     this.newline = '\n'
-    this.spearator = ','
+    this.separator = ','
   }
 
-  setSpearator(spearator) {
-    this.spearator = spearator
+  setSeparator(separator) {
+    this.separator = separator
     return this
   }
 
@@ -15,12 +15,12 @@ class Converter {
 
     var lines = csv.split(this.newline)
     var header = lines.shift()
-    var keys = header.split(this.spearator)
+    var keys = header.split(this.separator)
     var self = this
 
     return lines.map(function(line) {
       var object = {}
-      var records = line.split(self.spearator)
+      var records = line.split(self.separator)
       for (var i = 0; i < keys.length; i++) {
         object[keys[i]] = records[i]
       }
@@ -35,13 +35,13 @@ class Converter {
     var self = this
     var csvArray = []
 
-    csvArray.push(Object.keys(json[0]).join(self.spearator))
+    csvArray.push(Object.keys(json[0]).join(self.separator))
 
     json.map(element =>
       csvArray.push(
         Object.keys(element)
           .map(key => element[key])
-          .join(self.spearator)
+          .join(self.separator)
       )
     )
 
