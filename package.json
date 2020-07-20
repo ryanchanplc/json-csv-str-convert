@@ -9,6 +9,14 @@
   "directories": {
     "test": "test"
   },
+  "files": [
+    "/src",
+    "./index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanchanplc/json-csv-str-convert.git"
+  },
   "author": "ryanchanplc",
   "license": "ISC",
   "devDependencies": {
