@@ -22,11 +22,11 @@ var converter = require('json-csv-str-convert')
 //import module
 var converter = require('json-csv-str-convert')
 //Json2Csv
-convert.Json2Csv()
+var csvStr = convert.Json2Csv(your-json-object)
 //Csv2Json
-convert.Csv2Json()
+var jsonObject = convert.Csv2Json("your csv string")
 //default Separator is ',', you can change the separator
-convert.setSeparator(';').Json2Csv()
+csvStr = convert.setSeparator(';').Json2Csv(your-json-object)
 ```
 
 ## Example
